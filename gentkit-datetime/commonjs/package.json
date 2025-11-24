@@ -1,6 +1,6 @@
 {
-  "name": "gentkit-datetime",
-  "version": "1.0.0-commonjs",
+  "name": "gentkit-datetime-commonjs",
+  "version": "1.0.0",
   "description": "Date and Time handling library.",
   "keywords": [
     "gentkit",
