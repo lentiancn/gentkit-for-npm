@@ -1,4 +1,4 @@
-const { formatDateTime } = require('../index.js');
+const { formatDateTime } = require('../commonjs/index.js');
 
 describe('formatDateTime', () => {
     test('should format date with default format', () => {
