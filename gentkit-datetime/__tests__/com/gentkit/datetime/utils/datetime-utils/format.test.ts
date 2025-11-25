@@ -1,4 +1,4 @@
-import {DateTimeUtils} from '../../src/com/gentkit/datetime/utils/datetime-utils';
+import {DateTimeUtils} from '../../../../../../src/com/gentkit/datetime/utils/datetime-utils';
 
 describe('DateTimeUtils', () => {
     describe('format - Year Formats', () => {
