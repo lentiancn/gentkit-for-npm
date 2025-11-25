@@ -1,7 +1,7 @@
 /*
- * DatetimeUtils.ts
+ * DateTimeUtils.ts
  */
-export class DatetimeUtils {
+export class DateTimeUtils {
 
     public static format(pattern: string, date: Date): string {
         const year = date.getFullYear();
