@@ -1,10 +1,10 @@
 {
-  "name": "gentkit-datetime-commonjs",
+  "name": "gentkit-datetime-module",
   "version": "1.0.0",
   "description": "Date and Time handling library.",
   "keywords": [
-    "commonjs",
     "module",
+    "commonjs",
     "gentkit",
     "date",
     "time",
@@ -16,7 +16,7 @@
   },
   "license": "MIT",
   "author": "田隆 (Len)",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jest"
