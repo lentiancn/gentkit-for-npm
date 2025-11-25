@@ -15,7 +15,9 @@ export default [
             typescript({
                 tsconfig: './tsconfig.json',
                 compilerOptions: {
-                    module: 'ESNext'
+                    module: 'ESNext',
+                    declaration: true,
+                    declarationDir: './dist'
                 }
             })
         ]
@@ -34,7 +36,8 @@ export default [
             typescript({
                 tsconfig: './tsconfig.json',
                 compilerOptions: {
-                    module: 'CommonJS'
+                    module: 'CommonJS',
+                    declaration: false // 只生成一次类型声明
                 }
             })
         ]
