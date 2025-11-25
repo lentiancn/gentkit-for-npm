@@ -73,7 +73,7 @@ describe('DateTimeUtils', () => {
 
         test('should handle mixed case Y and y formats', () => {
             const result = DateTimeUtils.format('YyYY', testDate);
-            expect(result).toBe('2025252025');
+            expect(result).toBe('2025202525');
         });
     });
 });

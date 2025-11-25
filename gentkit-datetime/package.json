@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Date and Time handling library.",
   "keywords": [
+    "node",
+    "npm",
+    "yarn",
+    "lib",
     "commonjs",
     "module",
     "gentkit",
@@ -12,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/gentkit/gent-kit-for-npm"
+    "url": "https://gitee.com/gentkit/gentkit-for-npm"
   },
   "license": "MIT",
   "author": "田隆 (Len)",
