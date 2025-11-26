@@ -1,5 +1,5 @@
 {
-  "name": "gentkit-datetime-beta3",
+  "name": "gentkit-datetime-beta4",
   "version": "1.0.0",
   "description": "Date and Time handling library.",
   "keywords": [
@@ -38,17 +38,16 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "jest",
+    "test": "vitest run",
     "test:watch": "jest --watch",
     "prepublishOnly": "npm run build && npm run test"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
-    "@types/jest": "^30.0.0",
     "rollup": "^4.53.3",
-    "ts-jest": "^29.4.5",
     "tslib": "^2.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
   }
 }

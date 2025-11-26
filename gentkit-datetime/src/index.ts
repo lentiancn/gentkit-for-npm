@@ -23,4 +23,3 @@
  */
 
 export * from './com/gentkit/datetime/utils/datetime-utils.ts';
-export * from './com/gentkit/datetime/index.ts';
