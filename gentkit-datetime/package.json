@@ -1,5 +1,5 @@
 {
-  "name": "gentkit-datetime-beta4",
+  "name": "gentkit-datetime-beta5",
   "version": "1.0.0",
   "description": "Date and Time handling library.",
   "keywords": [
@@ -36,8 +36,7 @@
     }
   },
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "npm run build:esm && npm run build:cjs",
     "test": "vitest run",
     "test:coverage": "vitest --coverage",
     "prepublishOnly": "npm run build && npm run test"
