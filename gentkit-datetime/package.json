@@ -44,7 +44,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json",
+    "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json",
     "test": "vitest run",
     "test:coverage": "vitest --coverage",
     "prepublishOnly": "npm run build && npm run test"
