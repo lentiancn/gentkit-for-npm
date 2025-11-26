@@ -2,11 +2,11 @@
   "compilerOptions": {
     "rootDir": "./src",
     "target": "ESNext",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "declaration": true,
     "declarationMap": true,
-    "outDir": "./dist",
+    "outDir": "./dist1",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -22,6 +22,7 @@
   ],
   "exclude": [
     "dist",
+    "dist1",
     "node_modules",
     "test"
   ]

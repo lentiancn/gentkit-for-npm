@@ -22,4 +22,4 @@
  * SOFTWARE.
  */
 
-export * from './com/gentkit/datetime/utils/datetime-utils.ts';
+export * from './datetime/index.js';

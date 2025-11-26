@@ -1,5 +1,5 @@
 {
-  "name": "gentkit-datetime-beta5",
+  "name": "gentkit-datetime-beta7",
   "version": "1.0.0",
   "description": "Date and Time handling library.",
   "keywords": [
@@ -21,8 +21,8 @@
   "license": "MIT",
   "author": "田隆 (Len)",
   "type": "module",
-  "main": "index.cjs",
-  "module": "index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
@@ -38,7 +38,8 @@
     }
   },
   "files": [
-    "dist",
+    "dist1/*",
+    "dist/*",
     "README.md",
     "LICENSE"
   ],
