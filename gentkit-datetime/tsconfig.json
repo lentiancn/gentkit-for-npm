@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "rootDir": "./src",
-    "target": "ES2020",
+    "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": ".",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

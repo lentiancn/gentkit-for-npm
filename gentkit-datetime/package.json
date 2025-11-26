@@ -21,8 +21,8 @@
   "license": "MIT",
   "author": "田隆 (Len)",
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "main": "index.cjs",
+  "module": "index.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
