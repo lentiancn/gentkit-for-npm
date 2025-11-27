@@ -1,5 +1,5 @@
 {
-  "name": "gentkit-datetime-beta",
+  "name": "gentkit",
   "version": "1.0.0",
   "description": "Date and Time handling library.",
   "keywords": [
@@ -45,8 +45,7 @@
   "scripts": {
     "prepublishOnly": "npm run build && npm run test",
     "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json",
-    "test": "vitest run",
-    "test:coverage": "vitest --coverage"
+    "test": "vitest run --coverage"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^4.0.14",
