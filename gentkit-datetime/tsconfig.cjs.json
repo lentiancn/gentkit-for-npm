@@ -1,28 +1,8 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "rootDir": "./src",
-    "target": "ESNext",
     "module": "CommonJS",
     "moduleResolution": "Node",
-    "declaration": true,
-    "declarationMap": true,
-    "outDir": "./dist-cjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "sourceMap": true,
-    "allowImportingTsExtensions": false,
-    "emitDeclarationOnly": false,
-    "noEmit": false
-  },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "dist",
-    "dist-cjs",
-    "node_modules",
-    "test"
-  ]
+    "outDir": "./dist-cjs"
+  }
 }
