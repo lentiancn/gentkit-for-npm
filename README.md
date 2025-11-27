@@ -1,4 +1,4 @@
-# GentKit DateTime
+# GentKit
 
 ## 用法
 

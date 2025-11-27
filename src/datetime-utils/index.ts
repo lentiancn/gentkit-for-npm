@@ -1,4 +1,3 @@
-
 export function format(
     pattern: string,
     date: Date

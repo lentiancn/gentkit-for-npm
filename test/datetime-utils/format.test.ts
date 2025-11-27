@@ -1,6 +1,6 @@
+import {describe, expect, it} from 'vitest';
+import {format} from "../../src";
 
-import { describe, it, expect } from 'vitest';
-import { format } from '../../src';
 
 describe('format', () => {
     const testDate = new Date(2023, 5, 15, 14, 30, 45); // 2023-06-15 14:30:45
