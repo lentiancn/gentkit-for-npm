@@ -3,8 +3,6 @@ export function format(
     date: Date
 ): string {
     const year = date.getFullYear();
-
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
     const day = date.getDate().toString().padStart(2, '0');
     const hours = date.getHours().toString().padStart(2, '0');
     const minutes = date.getMinutes().toString().padStart(2, '0');
@@ -13,6 +11,7 @@ export function format(
     let result;
 
     result = formatYear(pattern, year+"");
+    result = formatMonth(result, date);
     result = formatMinute(result, minutes);
 
     //
@@ -52,6 +51,21 @@ function formatYear(pattern: string, yearString: string) {
     result = result.replace(/y{3}/g, yearString.padStart(4, '0'));
     result = result.replace(/y{2}/g, yearString.substring(2).padStart(2, '0'));
     result = result.replace(/y{1}/g, yearString);
+
+    return result;
+}
+
+function formatMonth(pattern: string, date: Date) {
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+
+    let result = pattern;
+
+    result = result.replace(/M{4,}/g, match => {
+        return new Intl.DateTimeFormat('en-US', {month: 'long'}).format(date);
+    });
+    result = result.replace(/M{3}/g, new Intl.DateTimeFormat('en-US', { month: 'short' }).format(date));
+    result = result.replace(/M{2}/g, month);
+    result = result.replace(/M{1}/g, month);
 
     return result;
 }

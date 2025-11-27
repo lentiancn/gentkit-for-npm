@@ -30,18 +30,18 @@ describe('format', () => {
         expect(format('yyyyyyyyyy', testDate)).toBe('0000002025');
     });
 
-    // it('should format month correctly', () => {
-    //     expect(format('M', testDate)).toBe('11');
-    //     expect(format('MM', testDate)).toBe('11');
-    //     expect(format('MMM', testDate)).toBe('Nov');
-    //     expect(format('MMMM', testDate)).toBe('November');
-    //     expect(format('MMMMM', testDate)).toBe('November');
-    //     expect(format('MMMMMM', testDate)).toBe('November');
-    //     expect(format('MMMMMMM', testDate)).toBe('November');
-    //     expect(format('MMMMMMMM', testDate)).toBe('November');
-    //     expect(format('MMMMMMMMM', testDate)).toBe('November');
-    //     expect(format('MMMMMMMMMM', testDate)).toBe('November');
-    // });
+    it('should format month correctly', () => {
+        expect(format('M', testDate)).toBe('04');
+        expect(format('MM', testDate)).toBe('04');
+        expect(format('MMM', testDate)).toBe('Apr');
+        expect(format('MMMM', testDate)).toBe('April');
+        expect(format('MMMMM', testDate)).toBe('April');
+        expect(format('MMMMMM', testDate)).toBe('April');
+        expect(format('MMMMMMM', testDate)).toBe('April');
+        expect(format('MMMMMMMM', testDate)).toBe('April');
+        expect(format('MMMMMMMMM', testDate)).toBe('April');
+        expect(format('MMMMMMMMMM', testDate)).toBe('April');
+    });
 
     it('should format minute correctly', () => {
         expect(format('m', testDate)).toBe('18');
