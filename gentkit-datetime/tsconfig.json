@@ -21,6 +21,7 @@
   ],
   "exclude": [
     "dist",
+    "dist-cjs",
     "node_modules",
     "test"
   ]

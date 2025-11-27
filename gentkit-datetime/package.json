@@ -44,7 +44,7 @@
   ],
   "scripts": {
     "prepublishOnly": "npm run build && npm run test",
-    "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjson",
+    "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json",
     "test": "vitest run",
     "test:coverage": "vitest --coverage"
   },
