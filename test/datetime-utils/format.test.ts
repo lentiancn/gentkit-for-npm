@@ -2,33 +2,60 @@ import {describe, expect, it} from 'vitest';
 import {format} from "../../src/datetime-utils/index.js";
 
 describe('format', () => {
-    const testDate = new Date(2023, 5, 15, 14, 30, 45); // 2023-06-15 14:30:45
+    const testDate = new Date(2025, 3, 16, 17, 18, 19); // 2023-06-15 14:30:45
 
     it('should format year correctly', () => {
-        expect(format('YYYY', testDate)).toBe('2023');
-        expect(format('YY', testDate)).toBe('23');
-        expect(format('Y', testDate)).toBe('2023');
-        expect(format('YYYYY', testDate)).toBe('02023');
-        expect(format('YYYYYY', testDate)).toBe('002023');
-        expect(format('YYYYYYY', testDate)).toBe('0002023');
-        expect(format('YYYYYYYY', testDate)).toBe('00002023');
-        expect(format('YYYYYYYYY', testDate)).toBe('000002023');
-        expect(format('YYYYYYYYYY', testDate)).toBe('0000002023');
-        expect(format('YYYYYYYYYYY', testDate)).toBe('00000002023');
+        expect(format('Y', testDate)).toBe('2025');
+        expect(format('YY', testDate)).toBe('25');
+        expect(format('YYY', testDate)).toBe('2025');
+        expect(format('YYYY', testDate)).toBe('2025');
+        expect(format('YYYYY', testDate)).toBe('02025');
+        expect(format('YYYYYY', testDate)).toBe('002025');
+        expect(format('YYYYYYY', testDate)).toBe('0002025');
+        expect(format('YYYYYYYY', testDate)).toBe('00002025');
+        expect(format('YYYYYYYYY', testDate)).toBe('000002025');
+        expect(format('YYYYYYYYYY', testDate)).toBe('0000002025');
     });
 
-    // it('should format year with lowercase y correctly', () => {
-    //     expect(format('yyyy', testDate)).toBe('2023');
-    //     expect(format('yy', testDate)).toBe('23');
-    //     expect(format('y', testDate)).toBe('2023');
-    //     expect(format('yyyyy', testDate)).toBe('02023');
-    //     expect(format('yyyyyy', testDate)).toBe('002023');
+    it('should format year with lowercase y correctly', () => {
+        expect(format('y', testDate)).toBe('2025');
+        expect(format('yy', testDate)).toBe('25');
+        expect(format('yyy', testDate)).toBe('2025');
+        expect(format('yyyy', testDate)).toBe('2025');
+        expect(format('yyyyy', testDate)).toBe('02025');
+        expect(format('yyyyyy', testDate)).toBe('002025');
+        expect(format('yyyyyyy', testDate)).toBe('0002025');
+        expect(format('yyyyyyyy', testDate)).toBe('00002025');
+        expect(format('yyyyyyyyy', testDate)).toBe('000002025');
+        expect(format('yyyyyyyyyy', testDate)).toBe('0000002025');
+    });
+
+    // it('should format month correctly', () => {
+    //     expect(format('M', testDate)).toBe('11');
+    //     expect(format('MM', testDate)).toBe('11');
+    //     expect(format('MMM', testDate)).toBe('Nov');
+    //     expect(format('MMMM', testDate)).toBe('November');
+    //     expect(format('MMMMM', testDate)).toBe('November');
+    //     expect(format('MMMMMM', testDate)).toBe('November');
+    //     expect(format('MMMMMMM', testDate)).toBe('November');
+    //     expect(format('MMMMMMMM', testDate)).toBe('November');
+    //     expect(format('MMMMMMMMM', testDate)).toBe('November');
+    //     expect(format('MMMMMMMMMM', testDate)).toBe('November');
     // });
-    //
-    // it('should handle long year patterns', () => {
-    //     expect(format('YYYYYYY', testDate)).toBe('2023');
-    //     expect(format('yyyyyyy', testDate)).toBe('2023');
-    // });
+
+    it('should format minute correctly', () => {
+        expect(format('m', testDate)).toBe('18');
+        expect(format('mm', testDate)).toBe('18');
+        expect(format('mmm', testDate)).toBe('018');
+        expect(format('mmmm', testDate)).toBe('0018');
+        expect(format('mmmmm', testDate)).toBe('00018');
+        expect(format('mmmmmm', testDate)).toBe('000018');
+        expect(format('mmmmmmm', testDate)).toBe('0000018');
+        expect(format('mmmmmmmm', testDate)).toBe('00000018');
+        expect(format('mmmmmmmmm', testDate)).toBe('000000018');
+        expect(format('mmmmmmmmmm', testDate)).toBe('0000000018');
+    });
+
     //
     // it('should format month correctly', () => {
     //     expect(format('MM', testDate)).toBe('06');
