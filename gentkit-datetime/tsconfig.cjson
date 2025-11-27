@@ -6,7 +6,7 @@
     "moduleResolution": "Node",
     "declaration": true,
     "declarationMap": true,
-    "outDir": "./dist1",
+    "outDir": "./dist-cjs",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -21,7 +21,7 @@
   ],
   "exclude": [
     "dist",
-    "dist1",
+    "dist-cjs",
     "node_modules",
     "test"
   ]

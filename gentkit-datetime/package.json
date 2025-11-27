@@ -1,5 +1,5 @@
 {
-  "name": "gentkit-datetime-beta7",
+  "name": "gentkit-datetime-beta",
   "version": "1.0.0",
   "description": "Date and Time handling library.",
   "keywords": [
@@ -21,33 +21,32 @@
   "license": "MIT",
   "author": "田隆 (Len)",
   "type": "module",
-  "main": "./dist/index.cjs",
+  "main": "./dist-cjs/index.js",
   "module": "./dist/index.js",
-  "types": "./dist/types/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
     ".": {
       "import": {
-        "types": "./dist/types/index.d.ts",
+        "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
       },
       "require": {
-        "types": "./dist/types/index.d.cts",
-        "default": "./dist/index.cjs"
+        "types": "./dist-cjs/index.d.ts",
+        "default": "./dist-cjs/index.js"
       }
     }
   },
   "files": [
-    "dist1/*",
-    "dist/*",
+    "dist/**",
     "README.md",
-    "LICENSE"
+    "../LICENSE"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json",
+    "prepublishOnly": "npm run build && npm run test",
+    "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjson",
     "test": "vitest run",
-    "test:coverage": "vitest --coverage",
-    "prepublishOnly": "npm run build && npm run test"
+    "test:coverage": "vitest --coverage"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^4.0.14",
