@@ -1,6 +1,5 @@
 import {describe, expect, it} from 'vitest';
-import {format} from "../../src";
-
+import {format} from "../../src/datetime-utils/index.js";
 
 describe('format', () => {
     const testDate = new Date(2023, 5, 15, 14, 30, 45); // 2023-06-15 14:30:45
