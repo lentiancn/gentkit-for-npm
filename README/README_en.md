@@ -17,10 +17,10 @@ component, file, or even code segment without coupling between them.
 
 ## Components
 
-| NO. | Component                                         | Description                    |
-|-----|:--------------------------------------------------|:-------------------------------|
+| NO. | Component                                  | Description                    |
+|-----|:-------------------------------------------|:-------------------------------|
 | 1   | [datetime-utils](datetime-utils/README.md) | Date and Time handing utility. |
-| x   | Documentation in progress...                      |                                |
+| x   | Documentation in progress...               |                                |
 
 ## Donate
 
