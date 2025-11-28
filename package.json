@@ -1,7 +1,7 @@
 {
-  "name": "gentkit_beta1",
+  "name": "gentkit",
   "version": "1.0.0",
-  "description": "Date and Time handling library.",
+  "description": "Build a set of open-source frameworks with minimal dependencies and clean design, supporting independent usage of each\ncomponent, file, or even code segment without coupling between them.",
   "keywords": [
     "node",
     "npm",
