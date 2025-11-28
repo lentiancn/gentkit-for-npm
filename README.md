@@ -1,8 +1,8 @@
 # GentKit
 
-[![许可证](https://img.shields.io/github/license/lentiancn/gentkit-for-java-jdk17.svg)](LICENSE)
-[![Codecov](https://img.shields.io/codecov/c/github/lentiancn/gentkit-for-java-jdk17/master)](https://codecov.io/gh/lentiancn/gentkit-for-java-jdk17)
-[![GitHub 发行版本](https://img.shields.io/github/tag/lentiancn/gentkit-for-java-jdk17.svg?label=release)](https://github.com/lentiancn/gentkit-for-java-jdk17/releases)
+[![许可证](https://img.shields.io/github/license/lentiancn/gentkit-for-npm.svg)](LICENSE)
+[![Codecov](https://img.shields.io/codecov/c/github/lentiancn/gentkit-for-npm/master)](https://codecov.io/gh/lentiancn/gentkit-for-npm)
+[![GitHub 发行版本](https://img.shields.io/github/tag/lentiancn/gentkit-for-npm.svg?label=release)](https://github.com/lentiancn/gentkit-for-npm/releases)
 
 简体中文 | [繁體中文](README/README_zh_CN_Hant.md) | [English](README/README_en.md)
 
@@ -12,15 +12,14 @@
 
 ## 开发语言
 
-- Java JDK 17，但是如果需要应用旧版本环境，请移步至 [Java JDK 1.8](https://gitee.com/gentkit/gentkit-for-java-jdk8)
+- TypeScript + JavaScript
 
 ## 组件列表
 
-| 序号 | 组件                                         | 说明                                    |
-|----|:-------------------------------------------|:--------------------------------------|
-| 1  | [GentKit Base64](gentkit-base64/README.md) | Base64 encoding and decoding library. |
-| 2  | [GentKit Color](gentkit-color/README.md)   | Color library.                        |
-| 3  | [GentKit Logger](gentkit-logger/README.md) | Logger library.                       |
+| 序号 | 组件                                             | 说明       |
+|----|:-----------------------------------------------|:---------|
+| 1  | [datetime-utils](src/datetime-utils/README.md) | 日期时间处理工具 |
+| x  | 文档完善中...                                       |          |
 
 ## 捐助
 

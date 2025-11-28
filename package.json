@@ -39,6 +39,7 @@
   "files": [
     "cjs/**",
     "esm/**",
+    "README",
     "README.md",
     "LICENSE"
   ],

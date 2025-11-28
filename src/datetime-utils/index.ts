@@ -34,7 +34,7 @@ export function format(
 
     let result;
 
-    result = formatYear(pattern, year+"");
+    result = formatYear(pattern, year + "");
     result = formatMonth(result, date);
     result = formatMinute(result, minutes);
 
@@ -87,7 +87,7 @@ function formatMonth(pattern: string, date: Date) {
     result = result.replace(/M{4,}/g, match => {
         return new Intl.DateTimeFormat('en-US', {month: 'long'}).format(date);
     });
-    result = result.replace(/M{3}/g, new Intl.DateTimeFormat('en-US', { month: 'short' }).format(date));
+    result = result.replace(/M{3}/g, new Intl.DateTimeFormat('en-US', {month: 'short'}).format(date));
     result = result.replace(/M{2}/g, month);
     result = result.replace(/M{1}/g, month);
 
