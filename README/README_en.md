@@ -19,7 +19,7 @@ component, file, or even code segment without coupling between them.
 
 | NO. | Component                                         | Description                    |
 |-----|:--------------------------------------------------|:-------------------------------|
-| 1   | [datetime-utils](../src/datetime-utils/README.md) | Date and Time handing utility. |
+| 1   | [datetime-utils](datetime-utils/README.md) | Date and Time handing utility. |
 | x   | Documentation in progress...                      |                                |
 
 ## Donate

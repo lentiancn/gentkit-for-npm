@@ -18,7 +18,7 @@
 
 | 序號 | 組件                                                | 說明       |
 |----|:--------------------------------------------------|:---------|
-| 1  | [datetime-utils](../src/datetime-utils/README.md) | 日期時間處理工具 |
+| 1  | [datetime-utils](datetime-utils/README.md) | 日期時間處理工具 |
 | x  | 文件完善中...                                          |          |
 
 ## 捐助
