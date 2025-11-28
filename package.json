@@ -1,5 +1,5 @@
 {
-  "name": "gentkit",
+  "name": "gentkit_beta1",
   "version": "1.0.0",
   "description": "Date and Time handling library.",
   "keywords": [
@@ -21,30 +21,31 @@
   "license": "MIT",
   "author": "田隆 (Len)",
   "type": "module",
-  "main": "./cjs/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./cjs/index.cjs",
+  "module": "./esm/index.js",
+  "types": "./esm/index.d.ts",
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
+        "types": "./esm/index.d.ts",
+        "default": "./esm/index.js"
       },
       "require": {
-        "types": "./cjs/index.d.ts",
-        "default": "./cjs/index.js"
+        "types": "./cjs/index.d.cts",
+        "default": "./cjs/index.cjs"
       }
     }
   },
   "files": [
-    "dist/**",
     "cjs/**",
+    "esm/**",
     "README.md",
-    "../LICENSE"
+    "LICENSE"
   ],
   "scripts": {
-    "prepublishOnly": "npm run build && npm run test",
-    "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json",
+    "clean": "node bin/silent-clean.js",
+    "prepublishOnly": "npm run clean && npm run build && npm run test",
+    "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json && node bin/rename-cjs.js",
     "test": "vitest run --coverage"
   },
   "devDependencies": {

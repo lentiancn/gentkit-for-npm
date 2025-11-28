@@ -5,13 +5,13 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "declaration": true,
-    "declarationMap": true,
-    "outDir": "./dist",
+    "declarationMap": false,
+    "outDir": "./esm",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "allowImportingTsExtensions": false,
     "emitDeclarationOnly": false,
     "noEmit": false
@@ -20,8 +20,9 @@
     "src/**/*.ts"
   ],
   "exclude": [
-    "dist",
     "cjs",
+    "coverage",
+    "esm",
     "node_modules",
     "test"
   ]

@@ -1,9 +1,9 @@
 
 .idea/
-dist/
 cjs/
-node_modules/
 coverage/
+esm/
+node_modules/
 
 .DS_Store
 package-lock.json
