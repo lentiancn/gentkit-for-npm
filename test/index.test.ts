@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import * as index from '../src/index.ts'
+import * as index from '../src/index.js'
 
 describe('index.ts exports', () => {
     it('should export datetime-utils functions', () => {
