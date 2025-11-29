@@ -45,10 +45,9 @@
   ],
   "scripts": {
     "clean": "node bin/silent-clean.js",
-    "update:dependencies": "npm install",
-    "prepublishOnly": "npm run clean && npm run update:dependencies && npm run build && npm run test",
-    "build": "tsc -b tsconfig.json && tsc -b tsconfig.cjs.json && node bin/rename-cjs.js",
-    "test": "vitest run --coverage"
+    "build": "npm run clean && npm install && tsc -b tsconfig.json && tsc -b tsconfig.cjs.json && node bin/rename-cjs.js",
+    "test": "npm run build && vitest run --coverage",
+    "prepublishOnly": "npm run test"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^4.0.14",
