@@ -19,7 +19,7 @@ component, file, or even code segment without coupling between them.
 
 | NO. | Component                                  | Description                    |
 |-----|:-------------------------------------------|:-------------------------------|
-| 1   | [datetime-utils](README/datetime-utils/README.md) | Date and Time handing utility. |
+| 1   | [datetime-utils](docs/datetime-utils/README.md) | Date and Time handing utility. |
 | x   | Documentation in progress...               |                                |
 
 ## Donate
@@ -28,9 +28,9 @@ If the content was helpful to you, feel free to scan the QR code below to buy me
 is the motivation for my creation, thanks so much~ (●'◡'●)
 
 <div style="display:flex;">
-  <img src="README/Donate/alipay.jpg" alt="Alipay Donation" width="30%" style="width:40%;">
+  <img src="docs/Donate/alipay.jpg" alt="Alipay Donation" width="30%" style="width:40%;">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="README/Donate/wechat.jpg" alt="WeChat Donation" width="30%" style="width:40%;">
+  <img src="docs/Donate/wechat.jpg" alt="WeChat Donation" width="30%" style="width:40%;">
 </div>
 
 ## License

@@ -18,7 +18,7 @@
 
 | 序号 | 组件                                                | 说明       |
 |----|:--------------------------------------------------|:---------|
-| 1  | [datetime-utils](README/datetime-utils/README.md) | 日期时间处理工具 |
+| 1  | [datetime-utils](docs/datetime-utils/README.md) | 日期时间处理工具 |
 | x  | 文档完善中...                                          |          |
 
 ## 捐助
@@ -26,9 +26,9 @@
 如果内容对你有帮助，可扫下方二维码打赏一杯咖啡支持一下！你的认可，是创作的动力，非常感谢~ (●'◡'●)
 
 <div style="display:flex;">
-  <img src="README/Donate/alipay.jpg" alt="支付宝打赏" width="30%" style="width:40%;">
+  <img src="docs/Donate/alipay.jpg" alt="支付宝打赏" width="30%" style="width:40%;">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="README/Donate/wechat.jpg" alt="微信打赏" width="30%" style="width:40%;">
+  <img src="docs/Donate/wechat.jpg" alt="微信打赏" width="30%" style="width:40%;">
 </div>
 
 ## 许可证
