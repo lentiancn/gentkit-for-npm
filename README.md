@@ -4,7 +4,7 @@
 [![Codecov](https://img.shields.io/codecov/c/github/lentiancn/gentkit-for-npm/master)](https://codecov.io/gh/lentiancn/gentkit-for-npm)
 [![GitHub 发行版本](https://img.shields.io/github/tag/lentiancn/gentkit-for-npm.svg?label=release)](https://github.com/lentiancn/gentkit-for-npm/releases)
 
-简体中文 | [繁體中文](README/README_zh_CN_Hant.md) | [English](README/README_en.md)
+简体中文 | [繁體中文](README_zh_Hant.md) | [English](README_en.md)
 
 ## 介绍
 
