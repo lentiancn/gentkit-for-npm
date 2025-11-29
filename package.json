@@ -1,5 +1,5 @@
 {
-  "name": "gentkit",
+  "name": "gentkit_beta6",
   "version": "1.0.0",
   "description": "Build a set of open-source frameworks with minimal dependencies and clean design, supporting independent usage of each\ncomponent, file, or even code segment without coupling between them.",
   "keywords": [
@@ -46,7 +46,7 @@
   "scripts": {
     "clean": "node bin/silent-clean.js",
     "prepublishOnly": "npm run clean && npm run build && npm run test",
-    "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json && node bin/rename-cjs.js",
+    "build": "tsc -b tsconfig.json && tsc -b tsconfig.cjs.json && node bin/rename-cjs.js",
     "test": "vitest run --coverage"
   },
   "devDependencies": {
