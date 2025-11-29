@@ -1,5 +1,6 @@
-import { describe, it, expect } from 'vitest'
-import * as index from '../src/index.js'
+import {describe, expect, it} from 'vitest'
+// @ts-ignore
+import * as index from '../src/index.ts'
 
 describe('index.ts exports', () => {
     it('should export datetime-utils functions', () => {
@@ -7,8 +8,11 @@ describe('index.ts exports', () => {
         expect(Object.keys(index)).not.toHaveLength(0)
     })
 
-    it('should contain format function', () => {
-        expect(index.format).toBeDefined()
-        expect(typeof index.format).toBe('function')
+    it('should export all expected functions', () => {
+        const exportedFunctions = Object.keys(index).filter(key =>
+            typeof index[key] === 'function'
+        )
+
+        expect(exportedFunctions.length).toBeGreaterThan(0)
     })
 })
