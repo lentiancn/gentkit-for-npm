@@ -34,14 +34,14 @@ import path from 'path';
         if (stat.isDirectory()) {
             renameToCommonJS(fullPath);
         } else if (file.endsWith('.js')) {
-            replaceJsToCjs(fullPath)
-            replaceTsToCts(fullPath)
+            // replaceJsToCjs(fullPath)
+            // replaceTsToCts(fullPath)
 
             const newPath = fullPath.replace(/\.js$/, '.cjs');
             fs.renameSync(fullPath, newPath);
         } else if (file.endsWith('.ts')) {
-            replaceJsToCjs(fullPath)
-            replaceTsToCts(fullPath)
+            // replaceJsToCjs(fullPath)
+            // replaceTsToCts(fullPath)
 
             const newPath = fullPath.replace(/\.ts$/, '.cts');
             fs.renameSync(fullPath, newPath);

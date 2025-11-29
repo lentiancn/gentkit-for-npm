@@ -2,7 +2,7 @@ import {defineConfig} from "vitest/config";
 
 export default defineConfig({
     test: {
-        include: ['test/**/*.test.ts'],
+        include: ['test/**/*.test.cts','test/**/*.test.ts'],
         globals: true,
         coverage: {
             provider: 'v8', // 使用 v8 引擎生成覆盖率报告
