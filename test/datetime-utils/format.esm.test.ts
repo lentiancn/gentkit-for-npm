@@ -56,43 +56,4 @@ describe('format', () => {
         expect(format('mmmmmmmmm', testDate)).toBe('000000018');
         expect(format('mmmmmmmmmm', testDate)).toBe('0000000018');
     });
-
-    //
-    // it('should format month correctly', () => {
-    //     expect(format('MM', testDate)).toBe('06');
-    //     expect(format('YYYY-MM', testDate)).toBe('2023-06');
-    // });
-    //
-    // it('should format day correctly', () => {
-    //     expect(format('DD', testDate)).toBe('15');
-    //     expect(format('YYYY-MM-DD', testDate)).toBe('2023-06-15');
-    // });
-    //
-    // it('should format hours correctly', () => {
-    //     expect(format('HH', testDate)).toBe('14');
-    //     expect(format('HH:mm:ss', testDate)).toBe('14:30:45');
-    // });
-    //
-    // it('should format minutes correctly', () => {
-    //     expect(format('mm', testDate)).toBe('30');
-    //     expect(format('HH:mm:ss', testDate)).toBe('14:30:45');
-    // });
-    //
-    // it('should format seconds correctly', () => {
-    //     expect(format('ss', testDate)).toBe('45');
-    //     expect(format('HH:mm:ss', testDate)).toBe('14:30:45');
-    // });
-    //
-    // it('should format complete datetime patterns', () => {
-    //     expect(format('YYYY-MM-DD HH:mm:ss', testDate)).toBe('2023-06-15 14:30:45');
-    //     expect(format('YY-MM-DD HH:mm', testDate)).toBe('23-06-15 14:30');
-    // });
-    //
-    // it('should handle edge cases', () => {
-    //     const edgeDate = new Date(2000, 0, 1, 0, 0, 0); // 2000-01-01 00:00:00
-    //     expect(format('YYYY-MM-DD HH:mm:ss', edgeDate)).toBe('2000-01-01 00:00:00');
-    //
-    //     const singleDigitDate = new Date(2001, 2, 3, 4, 5, 6); // 2001-03-03 04:05:06
-    //     expect(format('YYYY-M-D H:m:s', singleDigitDate)).toBe('2001-M-D H:m:s');
-    // });
 });

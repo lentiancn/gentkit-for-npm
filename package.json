@@ -45,8 +45,8 @@
   ],
   "scripts": {
     "clean": "node bin/silent-clean.js",
-    "updateDependencies": "npm install",
-    "prepublishOnly": "npm run clean && npm run updateDependencies && npm run build && npm run test",
+    "update:dependencies": "npm install",
+    "prepublishOnly": "npm run clean && npm run update:dependencies && npm run build && npm run test",
     "build": "tsc -b tsconfig.json && tsc -b tsconfig.cjs.json && node bin/rename-cjs.js",
     "test": "vitest run --coverage"
   },
