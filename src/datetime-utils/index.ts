@@ -38,8 +38,7 @@ export function format(
     result = formatMonth(result, date);
     result = formatMinute(result, minutes);
 
-    //
-    // // 处理其他格式
+    // 处理其他格式
     // result = result.replace(/MM/g, month);
     // result = result.replace(/DD/g, day);
     // result = result.replace(/HH/g, hours);

@@ -34,11 +34,33 @@ import path from 'path';
         if (stat.isDirectory()) {
             renameToCommonJS(fullPath);
         } else if (file.endsWith('.js')) {
+            replaceJsToCjs(fullPath)
+            replaceTsToCts(fullPath)
+
             const newPath = fullPath.replace(/\.js$/, '.cjs');
             fs.renameSync(fullPath, newPath);
         } else if (file.endsWith('.ts')) {
+            replaceJsToCjs(fullPath)
+            replaceTsToCts(fullPath)
+
             const newPath = fullPath.replace(/\.ts$/, '.cts');
             fs.renameSync(fullPath, newPath);
         }
     });
 })('./cjs')
+
+function replaceJsToCjs(fullPath) {
+    const content = fs.readFileSync(fullPath, 'utf8');
+    const updatedContent = content
+        .replace(/(\.\/[^'"]+)\.js(['"])/g, '$1.cjs$2')
+        .replace(/(['"])\.\/([^'"]+)\.js(['"])/g, '$1./$2.cjs$3');
+    fs.writeFileSync(fullPath, updatedContent);
+}
+
+function replaceTsToCts(fullPath) {
+    const content = fs.readFileSync(fullPath, 'utf8');
+    const updatedContent = content
+        .replace(/(\.\/[^'"]+)\.ts(['"])/g, '$1.cts$2')
+        .replace(/(['"])\.\/([^'"]+)\.ts(['"])/g, '$1./$2.cts$3');
+    fs.writeFileSync(fullPath, updatedContent);
+}
