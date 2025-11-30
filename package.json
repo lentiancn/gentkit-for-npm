@@ -41,6 +41,8 @@
     "esm/**",
     "docs",
     "README.md",
+    "README_en.md",
+    "README_zh_Hant.md",
     "LICENSE"
   ],
   "scripts": {
