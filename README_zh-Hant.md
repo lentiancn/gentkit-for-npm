@@ -4,7 +4,7 @@
 [![Codecov](https://img.shields.io/codecov/c/github/lentiancn/gentkit-for-npm/master)](https://codecov.io/gh/lentiancn/gentkit-for-npm)
 [![GitHub 發行版本](https://img.shields.io/github/tag/lentiancn/gentkit-for-npm.svg?label=release)](https://github.com/lentiancn/gentkit-for-npm/releases)
 
-[简体中文](README.md) | 繁體中文 | [English](README_en.md)
+繁體中文 | [English](README.md) | [简体中文](README_zh-Hans.md)
 
 ## 介紹
 
@@ -33,8 +33,8 @@
 
 ## 許可證
 
-GentKit 採用 [MIT License](LICENSE) 協議進行授權 。
+`GentKit` 採用 [MIT 協議](LICENSE) 進行授權 。
 
 ## 聯絡方式
 
-電子信箱：gentkit@126.com
+電子信箱： gentkit@126.com

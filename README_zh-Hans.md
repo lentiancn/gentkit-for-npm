@@ -1,0 +1,40 @@
+# GentKit
+
+[![许可证](https://img.shields.io/github/license/lentiancn/gentkit-for-npm.svg)](LICENSE)
+[![Codecov](https://img.shields.io/codecov/c/github/lentiancn/gentkit-for-npm/master)](https://codecov.io/gh/lentiancn/gentkit-for-npm)
+[![GitHub 发行版本](https://img.shields.io/github/tag/lentiancn/gentkit-for-npm.svg?label=release)](https://github.com/lentiancn/gentkit-for-npm/releases)
+
+简体中文 | [繁體中文](README_zh-Hant.md) | [English](README.md)
+
+## 介绍
+
+打造一组可以最少依赖、干净的开源框架，支持每个组件、文件甚至代码段可以独立使用，相互没有耦合。
+
+## 开发语言
+
+- TypeScript + JavaScript
+
+## 组件列表
+
+| 序号 | 组件                                              | 说明       |
+|----|:------------------------------------------------|:---------|
+| 1  | [datetime-utils](docs/datetime-utils/README.md) | 日期时间处理工具 |
+| x  | 文档完善中...                                        |          |
+
+## 捐助
+
+如果内容对你有帮助，可扫下方二维码打赏一杯咖啡支持一下！你的认可，是创作的动力，非常感谢~ (●'◡'●)
+
+<div style="display:flex;">
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/alipay.jpg" alt="支付宝打赏" width="30%" style="width:40%;">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://gitee.com/lentiancn/lentiancn/raw/master/donate/wechat.jpg" alt="微信打赏" width="30%" style="width:40%;">
+</div>
+
+## 许可证
+
+`GentKit` 的授权遵循 [MIT 许可证](LICENSE) 。
+
+## 联系方式
+
+电子邮箱： gentkit@126.com
