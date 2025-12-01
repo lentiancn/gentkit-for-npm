@@ -1,6 +1,6 @@
 import {describe, expect, it} from 'vitest'
 
-// index.d.cts
+// cjs/index.d.cts
 const targetFile: string = '../../../cjs/index.d.cts'
 
 describe('cjs/index.d.cts type definitions', () => {

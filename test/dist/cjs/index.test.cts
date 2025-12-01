@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 
-// index.cjs
+// cjs/index.cjs
 const targetFile = '../../../cjs/index.cjs';
 
 describe('built package testing', () => {

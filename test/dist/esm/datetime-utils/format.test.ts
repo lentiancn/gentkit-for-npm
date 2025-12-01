@@ -1,6 +1,8 @@
 import {describe, expect, it} from 'vitest';
+
+// esm/datetime-utils/index.js
 // @ts-ignore
-import {format} from "../../../../cjs/datetime-utils/index.cjs";
+import {format} from "../../../../esm/datetime-utils/index.js";
 
 describe('format', () => {
     const testDate = new Date(2025, 3, 16, 17, 18, 19); // 2023-06-15 14:30:45
