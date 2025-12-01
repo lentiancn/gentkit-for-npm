@@ -1,18 +1,22 @@
-import {describe, expect, it} from 'vitest'
-// @ts-ignore
-import * as index from '../src/index.ts'
+import {describe, expect, it} from 'vitest';
 
-describe('index.ts exports', () => {
-    it('should export datetime-utils functions', () => {
-        expect(index).toBeDefined()
-        expect(Object.keys(index)).not.toHaveLength(0)
-    })
+describe('src/index.ts', () => {
+    it('should have proper re-exports', () => {
+        // @ts-ignore
+        expect(() => import('../src/index.ts')).not.toThrow();
+    });
 
-    it('should export all expected functions', () => {
-        const exportedFunctions = Object.keys(index).filter(key =>
-            typeof index[key] === 'function'
-        )
+    // @ts-ignore
+    it('should export all members from demo module', async () => {
+        // @ts-ignore
+        const module = await import('../src/index.ts');
+        // @ts-ignore
+        const demoModule = await import('../src/datetime-utils/index.ts');
 
-        expect(exportedFunctions.length).toBeGreaterThan(0)
-    })
-})
+        Object.keys(demoModule).forEach(key => {
+            expect(module).toHaveProperty(key);
+            // @ts-ignore
+            expect(module[key]).toBe(demoModule[key]);
+        });
+    });
+});
